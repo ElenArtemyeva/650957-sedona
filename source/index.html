@@ -5,7 +5,7 @@
   <title>HTML Academy: Седона</title>
 </head>
 <body>
-  <header class="page-header">
+  <header class="header">
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
@@ -30,18 +30,18 @@
         </ul>
       </div>
     </nav>
-    <a class="page-header__logo" href="#">
-      <img class="page-header__logo-image" src="http://placehold.it/150x100" width="102" height="83" alt="Логотип CITY OF SEDONA">
+    <a class="header__logo" href="#">
+      <img class="header__logo-image" src="http://placehold.it/150x100" width="102" height="83" alt="Логотип CITY OF SEDONA">
     </a>
     <section class="intro">
       <h2 class="visually-hidden">Главное изображение SEDONA</h2>
       <img class="intro-text" src="http://placehold.it/282x214" width="282" height="214" alt="Добро пожаловать в Седону! Потому что Гранд Каньон отстой!">
     </section>
   </header>
-  <main class="page-main">
-    <h3 class="page-main__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
-    <p class="page-main__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-    <ul class="page-main__list advantage-list">
+  <main class="main">
+    <h3 class="main__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
+    <p class="main__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    <ul class="main__list advantage-list">
       <li class="advantage-list__item">
         <a href="#">
           <h3 class="advantage-list__title">Настоящий городок</h3>
@@ -120,22 +120,20 @@
   </main>
   <footer class="footer">
     <p class="footer__hashtag">#VisitSedona</p>
-    <ul class="footer__list social-list">
-      <li class="social-list__item">
-        <a href="#">Твитер</a>
+    <ul class="footer__list social">
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Твитер</a>
       </li>
-      <li class="social-list__item">
-        <a href="#">Фейсбук</a>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy">Фейсбук</a>
       </li>
-      <li class="social-list__item">
-        <a href="#">Youtube</a>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="https://youtube.com/htmlacademyru">Youtube</a>
       </li>
     </ul>
-    <div class="footer__madein">
-      <p class="footer__madein-text">Разработано</p>
-      <a class="footer__madein-logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="http://placehold.it/27x34"  width="27" height="34" alt="Логотип HTML academy">
-      </a>
+    <div class="footer__madein madein">
+      <p class="madein__text">Разработано</p>
+      <a class="madein__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </footer>
 </body>
