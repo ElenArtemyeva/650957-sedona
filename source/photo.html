@@ -5,67 +5,69 @@
   <title>HTML Academy: Седона</title>
 </head>
 <body>
-  <header class="header">
+  <header class="page-header">
     <nav class="main-nav">
       <div class="main-nav__wrapper">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a>Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a>Форма отзыва</a>
+            <a href="form.html">Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a>Html Academy</a>
+            <a href="https://htmlacademy.ru">Html Academy</a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__login" href="login.html">Войти</a>
-          </li>
-        </ul>
+        <a class="main-nav__logo" href="index.html">
+          <img class="main-nav__logo-image" src="http://placehold.it/150x100" width="102" height="83" alt="Логотип CITY OF SEDONA">
+        </a>
       </div>
     </nav>
-    <a class="header__logo" href="#">
-      <img class="header__logo-image" src="http://placehold.it/150x100" width="102" height="83" alt="Логотип CITY OF SEDONA">
-    </a>
     <section class="intro">
       <h2 class="visually-hidden">Главное изображение Седона</h2>
       <img class="intro__text" src="http://placehold.it/229x39" width="229" height="39" alt="Надпись Седона">
     </section>
   </header>
-  <main class="main photo">
-    <h2 class="main__title">Фото и видео</h3>
-      <p class="main__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-      <ul class="main__list photo-list">
-        <li class="photo-list__item">
-          <img src="placehold.it/280x280" width="280" height="280" alt="">
-          <h3 class="photo-list__title">Неродные просторы</h3>
+  <main class="page-main page-main--photo">
+    <h3 class="page-main__title">Фото и видео</h3>
+      <p class="page-main__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <ul class="photo-list">
+        <li class="photo-list__item post">
+          <a href="#" class="post__link-fullscreen">
+            <img src="placehold.it/280x280" width="280" height="280" alt="Фото дороги">
+          </a>
+          <h4 class="photo-list__title">Неродные просторы</h4>
           <p class="photo-list__description">Автор фото: Борис</p>
-          <span class="photo-list__number">1350</span>
+          <button class="photo-list__number" type="button">1350</button>
         </li>
-
-        <li class="photo-list__item">
-          <img src="placehold.it/280x280" width="280" height="280" alt="">
-          <h3 class="photo-list__title">Местная растительность</h3>
+        <li class="photo-list__item post">
+          <a href="#" class="post__link-fullscreen">
+            <img src="placehold.it/280x280" width="280" height="280" alt="Фото цветущего растения">
+          </a>
+          <h4 class="photo-list__title">Местная растительность</h4>
           <p class="photo-list__description">Автор фото: Сергей</p>
-          <span class="photo-list__number">143</span>
+          <button class="photo-list__number" type="button">143</button>
         </li>
-        <li class="photo-list__item">
-          <img src="placehold.it/280x280" width="280" height="280" alt="">
-          <h3 class="photo-list__title">Дорога на север</h3>
+        <li class="photo-list__item post">
+          <a href="#" class="post__link-fullscreen">
+            <img src="placehold.it/280x280" width="280" height="280" alt="Фото дороги на север">
+          </a>
+          <h4 class="photo-list__title">Дорога на север</h4>
           <p class="photo-list__description">Автор фото: Петр</p>
-          <span class="photo-list__number">96</span>
+          <button class="photo-list__number" type="button">96</button>
         </li>
-        <li class="photo-list__item">
-          <img src="placehold.it/280x280" width="280" height="280" alt="">
-          <h3 class="photo-list__title">Мост дьявола</h3>
+        <li class="photo-list__item post">
+          <a href="#" class="post__link-fullscreen">
+            <img src="placehold.it/280x280" width="280" height="280" alt="Фото Моста дьявола">
+          </a>
+          <h4 class="photo-list__title">Мост дьявола</h4>
           <p class="photo-list__description">Автор фото: Антон</p>
-          <span class="photo-list__number">254</span>
+          <button class="photo-list__number" type="button">254</button>
         </li>
       </ul>
       <section class="video">
@@ -74,11 +76,22 @@
         <video width="321" height="201" controls="controls" poster="img/">
           <source src="video/" type="video/">
           </video>
+          <div class="video__content">
+            <div class="video__controls">
+              <div class="video__scale"></div>
+              <div class="video__toggle"></div>
+            </div>
+            <div class="video__panel">
+              <button class="video__control video__control--replay" type="button"></button>
+              <button class="video__control video__control--subtitles" type="button"></button>
+              <button class="video__control video__control--fullscreen" type="button"></button>
+            </div>
+          </div>
         </section>
       </main>
-      <footer class="footer">
-        <p class="footer__hashtag">#VisitSedona</p>
-        <ul class="footer__list social">
+      <footer class="page-footer">
+        <p class="page-footer__hashtag">#VisitSedona</p>
+        <ul class="page-footer__list social">
           <li class="social__item">
             <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Твитер</a>
           </li>
@@ -89,11 +102,10 @@
             <a class="social__link social__link--youtube" href="https://youtube.com/htmlacademyru">Youtube</a>
           </li>
         </ul>
-        <div class="footer__madein madein">
+        <div class="page-footer__madein madein">
           <p class="madein__text">Разработано</p>
           <a class="madein__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </footer>
-
     </body>
     </html>

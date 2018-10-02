@@ -5,129 +5,118 @@
   <title>HTML Academy: Седона</title>
 </head>
 <body>
-  <header class="header">
+  <header class="page-header">
     <nav class="main-nav">
       <div class="main-nav__wrapper">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a>Фото и видео</a>
+            <a href="photo.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
             <a>Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a>Html Academy</a>
+            <a href="https://htmlacademy.ru">Html Academy</a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__login" href="login.html">Войти</a>
-          </li>
-        </ul>
+        <a class="main-nav__logo" href="index.html">
+          <img class="main-nav__logo-image" src="http://placehold.it/150x100" width="102" height="83" alt="Логотип CITY OF SEDONA">
+        </a>
       </div>
     </nav>
-    <a class="header__logo" href="#">
-      <img class="header__logo-image" src="http://placehold.it/150x100" width="102" height="83" alt="Логотип CITY OF SEDONA">
-    </a>
     <section class="intro">
       <h2 class="visually-hidden">Главное изображение Седона</h2>
       <img class="intro__text" src="http://placehold.it/229x39" width="229" height="39" alt="Надпись Седона">
     </section>
   </header>
-  <main class="main form">
-    <h3 class="main__title">Оставьте свой отзыв</h3>
-    <p class="main__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-    <form class="appointment" action="https://echo.htmlacademy.ru" method="post">
-      <h3 class="appointment__title">Оставьте свой отзыв</h3>
-      <p class="appointment__item">
-        <label for="appointment-name">Имя:</label>
-        <input id="appointment-name" type="text" placeholder="Петр" name="name">
-      </p>
-      <p class="appointment__item">
-        <label for="appointment-surname">Фамилия:</label>
-        <input id="appointment-surname" type="text" placeholder="Иванов" name="surname">
-      </p>
-      <p class="appointment__item">
-        <label for="appointment-patronymic">Отчество:</label>
-        <input id="appointment-patronymic" type="text" placeholder="Александрович" name="patronymic">
-      </p>
-    </form>
-    <form class="contacts" action="https://echo.htmlacademy.ru" method="post">
-      <h3 class="contacts__title">Контактная информация</h3>
-      <p class="contacts__item">
-        <label for="contacts-phone">Контактный телефон:</label>
-        <input id="contacts-phone" type="number" placeholder="Введите телефон" name="phone">
-        <span class="contacts__icon contacts__icon--phone"></span>
-      </p>
-      <p class="contacts__item">
-        <label for="contacts-mail">Электронная почта:</label>
-        <input id="contacts-mail" type="text" placeholder="Введите e-mail" name="mail">
-        <span class="contacts__icon contacts__icon--mail"></span>
-      </p>
-    </form>
-    <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-      <fieldset class="filter__item impression">
-        <legend class="filter__title">
+  <main class="page-main page-main--form">
+    <h3 class="page-main__title">Оставьте свой отзыв</h3>
+    <p class="page-main__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    <form class="page-form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="page-form__item appointment">
+        <legend class="page-form__title">Оставьте свой отзыв</legend>
+        <p class="appointment__item">
+          <label for="appointment-name">Имя:</label>
+          <input id="appointment-name" type="text" placeholder="Петр" name="name">
+        </p>
+        <p class="appointment__item">
+          <label for="appointment-surname">Фамилия:</label>
+          <input id="appointment-surname" type="text" placeholder="Иванов" name="surname">
+        </p>
+        <p class="appointment__item">
+          <label for="appointment-patronymic">Отчество:</label>
+          <input id="appointment-patronymic" type="text" placeholder="Александрович" name="patronymic">
+        </p>
+      </fieldset>
+      <fieldset class="page-form__item contacts" action="https://echo.htmlacademy.ru" method="post">
+        <legend class="page-form__title">Контактная информация</legend>
+        <p class="contacts__item">
+          <label for="contacts-phone">Контактный телефон:</label>
+          <input id="contacts-phone" type="number" placeholder="Введите телефон" name="phone">
+        </p>
+        <p class="contacts__item">
+          <label for="contacts-mail">Электронная почта:</label>
+          <input id="contacts-mail" type="text" placeholder="Введите e-mail" name="mail">
+        </p>
+      </fieldset>
+      <fieldset class="page-form__item impression">
+        <legend class="page-form__title">
           Ваше общее впечатление:
         </legend>
         <ul class="impression__list">
           <li class="impression__item">
-            <label for="impression-plus"></label>
+            <label for="impression-plus">Скорее положительное</label>
             <input class="visually-hidden" id="impression-plus" type="radio" name="radio">
-            <span>Скорее положительное</span>
           </li>
           <li class="impression__item">
-            <label for="impression-minus"></label>
+            <label for="impression-minus">Скорее отрицательное</label>
             <input class="visually-hidden" id="impression-minus" type="radio" name="radio">
-            <span>Скорее отрицательное</span>
           </li>
           <li class="impression__item">
-            <label for="impression-dokhow"></label>
+            <label for="impression-dokhow">Затрудняюсь ответить</label>
             <input class="visually-hidden" id="impression-dokhow" type="radio" name="radio">
-            <span>Затрудняюсь ответить</span>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="filter__item attraction">
-        <legend class="filter__title">Посещенные достопримечательности:</legend>
+      <fieldset class="page-form__item attraction">
+        <legend class="page-form__title">Посещенные достопримечательности:</legend>
         <ul class="attraction__list">
           <li class="attraction__item">
-            <label for="devils-bridge"></label>
+            <label for="devils-bridge">Мост Дьявола</label>
             <input class="visually-hidden" id="devils-bridge" type="checkbox" name="checkbox">
-            <span>Мост Дьявола</span>
           </li>
           <li class="attraction__item">
-            <label for="mountain-bell"></label>
+            <label for="mountain-bell">Гора-Колокол</label>
             <input class="visually-hidden" id="mountain-bell" type="checkbox" name="checkbox">
-            <span>Гора-Колокол</span>
           </li>
           <li class="attraction__item">
-            <label for="slide-park"></label>
+            <label for="slide-park">Слайд-парк</label>
             <input class="visually-hidden" id="slide-park" type="checkbox" name="checkbox">
-            <span>Слайд-парк</span>
           </li>
           <li class="attraction__item">
-            <label for="red-rock"></label>
+            <label for="red-rock">Красные скалы</label>
             <input class="visually-hidden" id="red-rock" type="checkbox" name="checkbox">
-            <span>Красные скалы</span>
           </li>
         </ul>
       </fieldset>
+      <div class="page-form__item describe">
+        <p class="describe__item">
+          <label class="describe__title visually-hidden" for="describe-emotions">
+            Опишите свои эмоции:
+          </label>
+          <textarea class="describe__textarea" id="describe-emotions" type="text" placeholder="Опишите подробно все свои восторги">
+        </p>
+      </div>
     </form>
-    <form class="describe" action="https://echo.htmlacademy.ru">
-      <h3 class="describe__title">Опишите свои эмоции:</h3>
-      <label class="visually-hidden" for="describe-emotions"></label>
-      <input id="describe-emotions" type="text" placeholder="Опишите подробно все свои восторги">
-    </form>
-    <button class="button-send">Отправить отзыв</button>
+    <button class="button button__send">Отправить отзыв</button>
   </main>
-  <footer class="footer">
-    <p class="footer__hashtag">#VisitSedona</p>
-    <ul class="footer__list social">
+  <footer class="page-footer">
+    <p class="page-footer__hashtag">#VisitSedona</p>
+    <ul class="page-footer__list social">
       <li class="social__item">
         <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Твитер</a>
       </li>
@@ -138,7 +127,7 @@
         <a class="social__link social__link--youtube" href="https://youtube.com/htmlacademyru">Youtube</a>
       </li>
     </ul>
-    <div class="footer__madein madein">
+    <div class="page-footer__madein madein">
       <p class="madein__text">Разработано</p>
       <a class="madein__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
