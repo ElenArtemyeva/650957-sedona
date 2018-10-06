@@ -1,0 +1,13 @@
+.page-main__title {
+  @include reset;
+  line-height: 26px;
+}
+.page-main__text {
+  @include reset;
+  font-size: 14px;
+  line-height: 26px;
+}
+.page-main__text--form {
+  line-height: 24px;
+}
+

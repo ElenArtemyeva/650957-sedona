@@ -1,0 +1,22 @@
+.advantage-list {
+  @include resetls;
+}
+.advantage-list__title {
+  @include reset;
+  color: $title-color;
+}
+.advantage-list__wrapper,
+.advantage-list__item--blue {
+  background-color: $bg-blue;
+  }
+.advantage-list__item--grey {
+  background-color: $bg-grey;
+}
+.advantage-list__text {
+  @include reset;
+  font-size: 14px;
+  line-height: $lheight-text;
+  color: $text-color;
+}
+
+

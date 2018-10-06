@@ -1,0 +1,37 @@
+.page-form__group {
+  @include reset;
+  border: none;
+}
+.page-form__title {
+  color: $title-color;
+  font-weight: $bold;
+}
+.page-form__list {
+  @include resetls;
+}
+.page-form__item {
+  @include reset;
+}
+.page-form__label {
+  font-size: 14px;
+}
+.page-form__input-text {
+  padding-top: 16px;
+  padding-left: 20px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  border: none;
+}
+.page-form__input-text,
+.page-form__textarea {
+  @include placeholder {
+    font-family: "PTSans";
+    font-size: 18px;
+    font-weight: $bold;
+    color: $title-color;
+    background-color: $plholder-light;
+  }
+}
+.page-form__button {
+  border: none;
+}
