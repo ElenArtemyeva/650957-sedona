@@ -3,20 +3,32 @@
 }
 .advantage-list__title {
   @include reset;
+  margin-bottom: 15px;
   color: $title-color;
 }
 .advantage-list__wrapper,
 .advantage-list__item--blue {
+  padding-top: 45px;
   background-color: $bg-blue;
-  }
+}
 .advantage-list__item--grey {
+  padding-top: 33px;
+  padding-bottom: 33px;
   background-color: $bg-grey;
+  border-bottom: 1px solid $title-color;
+}
+.advantage-list__item--grey:last-child {
+  border-bottom: none;
 }
 .advantage-list__text {
   @include reset;
+  margin-bottom: 42px;
   font-size: 14px;
   line-height: $lheight-text;
   color: $text-color;
+}
+.advantage-list__number {
+  margin-bottom: 20px;
 }
 
 
