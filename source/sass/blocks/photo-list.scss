@@ -1,22 +1,26 @@
 .photo-list {
-  @include resetls;
-  font-size: $fsize-text;
+  @include reset-list;
+  font-size: $font-size;
   line-height: 24px;
 }
+
 .photo-list__item {
   padding-top: 23px;
   padding-bottom: 23px;
-  border-top: 1px solid $plholder-light;
+  border-top: 1px solid $placeholder-light;
 }
+
 .photo-list__item:last-child {
-  border-bottom: 1px solid $plholder-light;
+  border-bottom: 1px solid $placeholder-light;
 }
+
 .photo-list__title {
   @include reset;
   padding-bottom: 10px;
   font-weight: $bold;
   color: $title-color;
 }
+
 .photo-list__description {
   @include reset;
   padding-bottom: 10px;
