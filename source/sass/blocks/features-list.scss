@@ -1,0 +1,17 @@
+.features-list {
+  @include reset-list;
+  padding-top: 40px;
+}
+
+.features-list__title {
+  @include reset;
+  margin-bottom: 25px;
+  color: $title-color;
+}
+
+.features-list__text {
+  @include reset;
+  margin-bottom: 35px;
+  font-size: $font-size;
+  line-height: $line-height;
+}

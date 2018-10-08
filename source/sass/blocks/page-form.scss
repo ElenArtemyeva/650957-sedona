@@ -1,0 +1,80 @@
+.page-form__group:not(:last-child) {
+  @include reset;
+  border: none;
+  border-bottom: 1px solid $title-color;
+}
+
+.page-form__title {
+  margin-top: 25px;
+  margin-bottom: 35px;
+  color: $title-color;
+  font-weight: $bold;
+}
+
+.page-form__list {
+  @include reset-list;
+}
+
+.page-form__item {
+  @include reset;
+}
+
+.page-form__item--radio {
+  margin-bottom: 50px;
+}
+
+.page-form__item--checkbox {
+  margin-bottom: 60px;
+}
+
+.page-form__label {
+  font-size: 14px;
+  color: $title-color;
+}
+
+.page-form__label--radio,
+.page-form__label--checkbox {
+  font-size: 18px;
+  font-weight: $bold;
+  text-transform: none;
+}
+
+.page-form__label--textarea {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: $bold;
+}
+
+.page-form__input-text {
+  margin-bottom: 20px;
+  padding-top: 16px;
+  padding-right: 20px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  border: none;
+}
+
+.page-form__input-text::placeholder,
+.page-form__textarea::placeholder {
+  font-family: "PTSans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: $bold;
+  color: $title-color;
+  background-color: $placeholder-light;
+}
+
+.page-form__textarea {
+  margin-bottom: 50px;
+  padding-top: 23px;
+  padding-right: 30px;
+  padding-left: 20px;
+  width: 279px;
+  height: 160px;
+  border: none;
+}
+
+.page-form__button {
+  border: none;
+}

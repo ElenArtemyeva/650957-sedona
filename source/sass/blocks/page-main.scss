@@ -1,0 +1,17 @@
+.page-main__title {
+  @include reset;
+  margin-top: 45px;
+  margin-bottom: 35px;
+  line-height: 26px;
+}
+
+.page-main__text {
+  @include reset;
+  margin-bottom: 35px;
+  font-size: $font-size;
+  line-height: 26px;
+}
+
+.page-main__text--form {
+  line-height: 24px;
+}

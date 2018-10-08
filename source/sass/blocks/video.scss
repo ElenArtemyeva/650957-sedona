@@ -1,0 +1,18 @@
+.video {
+  padding-top: 40px;
+}
+
+.video__title {
+  @include reset;
+  margin-bottom: 35px;
+  font-size: 18px;
+  color: $title-color;
+  font-weight: $bold;
+}
+
+.video__text {
+  @include reset;
+  margin-bottom: 40px;
+  font-size: $font-size;
+  line-height: 24px;
+}
