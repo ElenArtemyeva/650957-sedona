@@ -1,7 +1,21 @@
+.page-form {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-form__group:not(:last-child) {
   @include reset;
   border: none;
   border-bottom: 1px solid $title-color;
+}
+
+.page-form__group--radio {
+  order: 2;
+}
+
+.page-form__group--checkbox,
+.page-form__group--textarea {
+  order: 3;
 }
 
 .page-form__title {
@@ -77,4 +91,31 @@
 
 .page-form__button {
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-form__group--radio,
+  .page-form__group--checkbox,
+  .page-form__group--textarea {
+    order: 0;
+  }
+
+  .page-form__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-form__textarea {
+    width: 648px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-form__list--checkbox {
+    display: flex;
+  }
+
+  .page-form__textarea {
+    width: 960px;
+  }
 }

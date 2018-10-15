@@ -14,3 +14,15 @@
   color: $bg-light;
   background: $bg-blue;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+  }
+
+  .site-list__link {
+    font-size: $font-size;
+    color: $title-color;
+    background: $bg-light;
+  }
+}

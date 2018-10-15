@@ -7,3 +7,9 @@
   font-weight: bold;
   color: $title-color;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+  }
+}
