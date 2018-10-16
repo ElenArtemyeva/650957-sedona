@@ -36,3 +36,26 @@
 .advantage-list__number {
   margin-bottom: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .advantage-list__wrapper {
+    display: flex;
+  }
+
+  .advantage-list__item--blue {
+    display: flex;
+  }
+
+  .advantage-list__image--bridge {
+    order: -1;
+  }
+
+  .advantage-list--grey {
+    display: flex;
+  }
+
+  .advantage-list__text {
+    display: flex;
+    flex-direction: column;
+  }
+}

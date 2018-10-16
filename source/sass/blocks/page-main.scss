@@ -7,11 +7,24 @@
 
 .page-main__text {
   @include reset;
+  width: 280px;
+  margin-right: auto;
   margin-bottom: 35px;
+  margin-left: auto;
   font-size: $font-size;
   line-height: 26px;
 }
 
 .page-main__text--form {
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    font-size: 21px;
+  }
+
+  .page-main__text {
+    width: 445px;
+  }
 }

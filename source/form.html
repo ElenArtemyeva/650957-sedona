@@ -38,21 +38,42 @@
     <h3 class="page-main__title">Оставьте свой отзыв</h3>
     <p class="page-main__text page-main__text--form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     <form class="page-form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="page-form__group">
-        <legend class="page-form__title">Оставьте свой отзыв</legend>
-        <p class="page-form__item">
-          <label class="page-form__label" for="appointment-name">Имя*:</label>
-          <input class="page-form__input-text" id="appointment-name" type="text" placeholder="Петр" name="name">
-        </p>
-        <p class="page-form__item">
-          <label class="page-form__label" for="appointment-surname">Фамилия*:</label>
-          <input class="page-form__input-text" id="appointment-surname" type="text" placeholder="Иванов" name="surname">
-        </p>
-        <p class="page-form__item">
-          <label class="page-form__label" for="appointment-patronymic">Отчество:</label>
-          <input class="page-form__input-text" id="appointment-patronymic" type="text" placeholder="Александрович" name="patronymic">
-        </p>
-      </fieldset>
+      <div class="page-form__wrapper">
+        <fieldset class="page-form__group page-form__group--radio">
+          <legend class="page-form__title">
+            Ваше общее впечатление:
+          </legend>
+          <ul class="page-form__list">
+            <li class="page-form__item page-form__item--radio">
+              <label class="page-form__label page-form__label--radio" for="impression-plus">Скорее положительное</label>
+              <input class="visually-hidden page-form__input-radio" id="impression-plus" type="radio" name="radio">
+            </li>
+            <li class="page-form__item page-form__item--radio">
+              <label class="page-form__label page-form__label--radio" for="impression-minus">Скорее отрицательное</label>
+              <input class="visually-hidden page-form__input-radio" id="impression-minus" type="radio" name="radio">
+            </li>
+            <li class="page-form__item page-form__item--radio">
+              <label class="page-form__label page-form__label--radio" for="impression-dokhow">Затрудняюсь ответить</label>
+              <input class="visually-hidden page-form__input-radio" id="impression-dokhow" type="radio" name="radio">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="page-form__group page-form__group--appointment">
+          <legend class="page-form__title">Представьтесь:</legend>
+          <p class="page-form__item">
+            <label class="page-form__label" for="appointment-name">Имя*:</label>
+            <input class="page-form__input-text" id="appointment-name" type="text" placeholder="Петр" name="name">
+          </p>
+          <p class="page-form__item">
+            <label class="page-form__label" for="appointment-surname">Фамилия*:</label>
+            <input class="page-form__input-text" id="appointment-surname" type="text" placeholder="Иванов" name="surname">
+          </p>
+          <p class="page-form__item">
+            <label class="page-form__label" for="appointment-patronymic">Отчество:</label>
+            <input class="page-form__input-text" id="appointment-patronymic" type="text" placeholder="Александрович" name="patronymic">
+          </p>
+        </fieldset>
+      </div>
       <fieldset class="page-form__group">
         <legend class="page-form__title">Контактная информация</legend>
         <p class="page-form__item">
@@ -64,28 +85,9 @@
           <input class="page-form__input-text" id="contacts-mail" type="text" placeholder="Введите e-mail" name="mail">
         </p>
       </fieldset>
-      <fieldset class="page-form__group">
-        <legend class="page-form__title">
-          Ваше общее впечатление:
-        </legend>
-        <ul class="page-form__list">
-          <li class="page-form__item page-form__item--radio">
-            <label class="page-form__label page-form__label--radio" for="impression-plus">Скорее положительное</label>
-            <input class="visually-hidden page-form__input-radio" id="impression-plus" type="radio" name="radio">
-          </li>
-          <li class="page-form__item page-form__item--radio">
-            <label class="page-form__label page-form__label--radio" for="impression-minus">Скорее отрицательное</label>
-            <input class="visually-hidden page-form__input-radio" id="impression-minus" type="radio" name="radio">
-          </li>
-          <li class="page-form__item page-form__item--radio">
-            <label class="page-form__label page-form__label--radio" for="impression-dokhow">Затрудняюсь ответить</label>
-            <input class="visually-hidden page-form__input-radio" id="impression-dokhow" type="radio" name="radio">
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="page-form__group">
+      <fieldset class="page-form__group page-form__group--checkbox">
         <legend class="page-form__title">Посещенные достопримечательности:</legend>
-        <ul class="page-form__list">
+        <ul class="page-form__list page-form__list--checkbox">
           <li class="page-form__item page-form__item--checkbox">
             <label class="page-form__label page-form__label--checkbox" for="devils-bridge">Мост Дьявола</label>
             <input class="visually-hidden page-form__input-checkbox" id="devils-bridge" type="checkbox" name="checkbox">
@@ -104,7 +106,7 @@
           </li>
         </ul>
       </fieldset>
-      <div class="page-form__group">
+      <div class="page-form__group page-form__group--textarea">
         <p class="page-form__item">
           <label class="page-form__label page-form__label--textarea" for="describe-emotions">
             Опишите свои эмоции:
